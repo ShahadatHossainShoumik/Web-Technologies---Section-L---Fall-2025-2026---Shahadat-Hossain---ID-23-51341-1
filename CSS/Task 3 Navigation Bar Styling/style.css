@@ -1,0 +1,21 @@
+nav {
+  display: block;
+  width: 100%;
+  background-color: lightblue;
+  padding: 8px 0;
+  box-sizing: border-box;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 10px 16px;
+  margin: 0 8px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  background-color: beige;
+  color: darkblue;
+}

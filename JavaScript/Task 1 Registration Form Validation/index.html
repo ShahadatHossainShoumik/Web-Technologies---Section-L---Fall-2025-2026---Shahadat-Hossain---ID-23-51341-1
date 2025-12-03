@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Registration Form</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form id="regForm">
+      <div>
+        <label for="fullName">Full Name</label><br />
+        <input type="text" id="fullName" name="fullName" />
+        <div id="nameError" class="error"></div>
+      </div>
+
+      <div>
+        <label for="email">Email</label><br />
+        <input type="text" id="email" name="email" />
+        <div id="emailError" class="error"></div>
+      </div>
+
+      <div>
+        <label for="password">Password</label><br />
+        <input type="password" id="password" name="password" />
+        <div id="passwordError" class="error"></div>
+      </div>
+
+      <div>
+        <label for="confirmPassword">Confirm Password</label><br />
+        <input type="password" id="confirmPassword" name="confirmPassword" />
+        <div id="confirmError" class="error"></div>
+      </div>
+
+      <div>
+        <label for="phone">Phone Number</label><br />
+        <input type="text" id="phone" name="phone" />
+        <div id="phoneError" class="error"></div>
+      </div>
+
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+
+      <div id="successMessage"></div>
+    </form>
+  </body>
+</html>

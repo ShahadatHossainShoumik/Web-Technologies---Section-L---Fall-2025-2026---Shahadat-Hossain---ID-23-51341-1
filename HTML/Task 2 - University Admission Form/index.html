@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>University Admission Form</title>
+</head>
+<body>
+
+    <h1>University Admission Form</h1>
+
+    <form>
+        
+        <fieldset>
+            <legend>Personal Info</legend>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" maxlength="30" required>
+            <br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" maxlength="30" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" maxlength="50" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+
+            <span>Gender:</span>
+            <input type="radio" id="genderMale" name="gender" value="male" required>
+            <label for="genderMale">Male</label>
+
+            <input type="radio" id="genderFemale" name="gender" value="female">
+            <label for="genderFemale">Female</label>
+
+            <input type="radio" id="genderOther" name="gender" value="other">
+            <label for="genderOther">Other</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Academic Info</legend>
+
+            <label for="school">School/College Name:</label>
+            <input type="text" id="school" name="school" maxlength="100" required>
+            <br><br>
+
+            <label for="gradYear">Year of Graduation:</label>
+            <input type="text" id="gradYear" name="gradYear" maxlength="4" required>
+            <br><br>
+
+            <label for="gpa">GPA / Percentage:</label>
+            <input type="text" id="gpa" name="gpa" maxlength="6" required>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Preferred Department / Course</legend>
+
+            <label for="department">Choose a course:</label>
+            <select id="department" name="department" required>
+                <option value="">-- Select --</option>
+                <option value="computer_science">Computer Science</option>
+                <option value="business">Business Administration</option>
+                <option value="engineering">Engineering</option>
+                <option value="arts">Arts & Humanities</option>
+                <option value="science">Natural Sciences</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Interests (select any)</legend>
+
+            <input type="checkbox" id="interestResearch" name="interests" value="research">
+            <label for="interestResearch">Research</label>
+
+            <input type="checkbox" id="interestSports" name="interests" value="sports">
+            <label for="interestSports">Sports</label>
+
+            <input type="checkbox" id="interestVolunteer" name="interests" value="volunteer">
+            <label for="interestVolunteer">Volunteer Work</label>
+
+            <input type="checkbox" id="interestMusic" name="interests" value="music">
+            <label for="interestMusic">Music / Arts</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Documents</legend>
+
+            <label for="resume">Resume / CV (PDF/DOC):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            <br><br>
+
+            <label for="transcript">Transcript (PDF):</label>
+            <input type="file" id="transcript" name="transcript" accept=".pdf" required>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>

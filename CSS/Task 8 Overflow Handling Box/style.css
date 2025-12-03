@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: blanchedalmond;
+  color: #000;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 760px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+.example {
+  margin-bottom: 18px;
+}
+h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+.box {
+  width: 300px;
+  height: 200px;
+  padding: 12px;
+  background-color: beige;
+  border: 1px solid gray;
+  border-radius: 6px;
+  box-sizing: border-box;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+/* overflow: visible - the overflowing content is allowed to spill out of the box and remains visible */
+.box.visible {
+  overflow: visible;
+}
+/* overflow: hidden - any content that extends beyond the box is clipped and not shown */
+.box.hidden {
+  overflow: hidden;
+}
+/* overflow: scroll - always show scrollbars so the user can scroll to see overflowing content */
+.box.scroll {
+  overflow: scroll;
+}
+/* overflow: auto - show scrollbars only when the content actually overflows the box */
+.box.auto {
+  overflow: auto;
+}
